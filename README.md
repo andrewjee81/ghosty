@@ -1,2 +1,2 @@
 # ghosty
-Automating Ghosty commands with Python
+Automating Ghosty commands for Discord with Python
