@@ -27,13 +27,14 @@ playwright install
 ## Configuration
 Modify the script to fit your specific needs:
 - **Storage State**: Ensure you have a valid `discord.json` file for authentication.
-- **Target Channel**: Update the locator `Message #🎮⏐ghosty` to match the exact label of the Discord channel.
+- **Target Discord**: Update `page.goto("#")` and replace # with the url to the discord channel.
+- **Target Message Box**: Update the locator `Message #🎮⏐ghosty` to match the exact label of the Discord channel.
 - **Scheduled Times**: Adjust the `schedule.every().day.at("HH:MM").do(job, "?date")` lines to your desired times.
 
 ## Usage
 Run the script using:
 ```sh
-python script.py
+python main.py
 ```
 The scheduler will execute jobs at the predefined times. The script runs indefinitely until stopped manually.
 
